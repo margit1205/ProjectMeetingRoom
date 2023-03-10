@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: black;">Meet Room | Booking</title>
+    <link rel="icon" href="./images/meeting.png" type="image/icon type">
+    <!-- <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" style="text/css"> -->
+    <link href="style.css" rel="stylesheet" style="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <!-- <div class="col-sm-3"> -->
+            <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" id="logo"class="logo">m<span>Y</span>room.com</a>
+      <!-- </div> -->
+      <!-- <div class="col-sm-6"> -->
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#home">Book</a>
+        <a href="#contact">Contact</a>
+        <a href="#insta">Feedback</a>
+      </nav>
+      <!-- </div> -->
+
+     <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    
+     </div>
+     <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search by city ..">
+        <label for="search-bar" class="fas fa-search"></label>
+     </form>
+        
+    </header>
+
+   <section class="loginpage">
+    <div class="wrapper">
+         <span class="icon-close"> <ion-icon name="close"></ion-icon></span>
+         
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form  action="#" id="login-form">
+                <div class="input-box">
+                    <span class="loginicon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email"  name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="loginicon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password"name="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forogt">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" href="User.html" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">&nbspRegister</a></p>
+                </div>
+            </form>
+        </div>
+
+
+        
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <form action="#" id="register-form">
+                <div class="input-box">
+                    <span class="loginicon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="userName" required>
+                    <label>Username</label>
+                </div>
+                 <div class="input-box">
+                    <span class="loginicon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="loginicon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forogt">
+                    <label><input type="checkbox">I agree to terms & conditions</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Register</button>
+
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">&nbspLogin</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+   </section>
+
+
+
+<section class="home" id="home">
+
+<div class="content">
+    <h3>Welcome to  <a  style="color:white;"href="#" id="logo"class="logo">m<span style="color:orange">Y</span>room.com</a>  </h3>
+    <p>discover new meeting room with us sucess awaits</p>
+    <a href="#ourserv" class="bookbtn">BookNow</a>
+
+</div>
+
+<div class="controls">
+    <span class="img-btn active" data-src="./images/MeetingRoom (7).jpg"></span>
+    <span class="img-btn" data-src="./images/MeetingRoom (16).jpg"></span>
+    <span class="img-btn" data-src="./images/MeetingRoom (13).jpg"></span>
+    <span class="img-btn" data-src="./images/MeetingRoom (9).jpg"></span>
+    <span class="img-btn" data-src="./images/MeetingRoom (23).jpg"></span>
+    <span class="img-btn" data-src="./images/MeetingRoom (14).jpg"></span>
+</div>
+<div class="image-container">
+    <img src="./images/MeetingRoom (7).jpg" id="image-slider">
+</div>
+</section>
+
+<section class="RoomCard">
+    <div class="text-center getst">
+        <button id="ourserv">Our Service</button>
+    </div>
+    <div class="row " style="margin-top: 60px; display:flex; justify-content:space-around;">
+         <div class=" col-sm-4 cardst" id="forf">
+          <img src="./images/MeetingRoom (1).jpg">
+          <div class="card-text">
+            <h5 class="textcent">Bihar</h5>
+            <p class="textcent">Interview Room,Patna</p>
+        </div>
+        <div class="card-btn">
+            <a href="Booking.html" class="bookbtn">BookNow</a>
+          </div>  
+
+          <div class="features">
+
+            <div class="hovericon">
+                <span><ion-icon name="tv-outline"></ion-icon></span>
+                <label>Samsung</label>
+                <label>Smart TV 50"</label>
+            </div>
+            <div class="hovericon">
+                <span><ion-icon name="logo-apple"></ion-icon></span>
+                <label>Mac Mini</label>
+                <label>Computer</label>
+            </div>
+            <div class="hovericon">
+                <span><ion-icon name="wifi-outline"></ion-icon></span>
+                <label>Super fast</label>
+                <label>Internet</label>
+            </div>
+            <div class="hovericon">
+                <span><ion-icon name="easel-outline"></ion-icon></span>
+                <label>Whiteboard</label>
+                
+            </div>
+            <div class="hovericon">
+                <span><ion-icon name="library-outline"></ion-icon></span>
+                <label>Wardrobe</label>
+                
+            </div>
+            <div class="hovericon">
+                <span><ion-icon name="cafe-outline"></ion-icon></span>
+                <label>Cofee & tea</label>
+                
+            </div>
+            <div class="seeavail-btn">
+                <a href="#"class="seebtn" >SEE AVAILABLITY</a>
+            </div>
+         </div>
+    
+    </div>
+
+         
+
+         <div class="col-sm-4 cardst">
+            <img src="./images/MeetingRoom (2).jpg">
+            <div class="card-text">
+                <h5 class="textcent">Hyderabad</h5>
+                <p class="textcent">Conference Room , Hitech City</p>
+            </div>
+            <div class="card-btn">
+                <a href="Booking.html" class="bookbtn">BookNow</a>
+              </div>
+
+              <div class="features">
+
+                <div class="hovericon">
+                    <span><ion-icon name="tv-outline"></ion-icon></span>
+                    <label>Samsung</label>
+                    <label>Smart TV 50"</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="logo-apple"></ion-icon></span>
+                    <label>Mac Mini</label>
+                    <label>Computer</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="wifi-outline"></ion-icon></span>
+                    <label>Super fast</label>
+                    <label>Internet</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="easel-outline"></ion-icon></span>
+                    <label>Whiteboard</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="library-outline"></ion-icon></span>
+                    <label>Wardrobe</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="cafe-outline"></ion-icon></span>
+                    <label>Cofee & tea</label>
+                    
+                </div>
+                <div class="seeavail-btn">
+                    <a href="#"class="seebtn" >SEE AVAILABLITY</a>
+                </div>
+             </div>
+         </div>
+
+         <div class="col-sm-4 cardst">
+            <img src="./images/MeetingRoom (3).jpg">
+            <div class="card-text">
+                <h5 class="textcent">Delhi</h5>
+                <p class="textcent">Interview Room , Noida</p>
+            </div>
+            <div class="card-btn">
+                <a href="Booking.html" class="bookbtn">BookNow</a>
+              </div>
+
+              <div class="features">
+
+                <div class="hovericon">
+                    <span><ion-icon name="tv-outline"></ion-icon></span>
+                    <label>Samsung</label>
+                    <label>Smart TV 50"</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="logo-apple"></ion-icon></span>
+                    <label>Mac Mini</label>
+                    <label>Computer</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="wifi-outline"></ion-icon></span>
+                    <label>Super fast</label>
+                    <label>Internet</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="easel-outline"></ion-icon></span>
+                    <label>Whiteboard</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="library-outline"></ion-icon></span>
+                    <label>Wardrobe</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="cafe-outline"></ion-icon></span>
+                    <label>Cofee & tea</label>
+                    
+                </div>
+                <div class="seeavail-btn">
+                    <a href="#"class="seebtn" >SEE AVAILABLITY</a>
+                </div>
+             </div>
+         </div>
+       </div>
+    
+     <div class="row " style="margin-top: 20px;display:flex; justify-content:space-around;">
+         <div class="col-sm-4 cardst">
+            <img src="./images/MeetingRoom (4).jpg">
+            <div class="card-text">
+                <h5 class="textcent">Kolkata</h5>
+                <p class="textcent">Presentation Room , Sealdah</p>
+            </div>
+            <div class="card-btn">
+                <a href="Booking.html" class="bookbtn">BookNow</a>
+              </div>
+
+              <div class="features2">
+
+                <div class="hovericon">
+                    <span><ion-icon name="tv-outline"></ion-icon></span>
+                    <label>Samsung</label>
+                    <label>Smart TV 50"</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="logo-apple"></ion-icon></span>
+                    <label>Mac Mini</label>
+                    <label>Computer</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="wifi-outline"></ion-icon></span>
+                    <label>Super fast</label>
+                    <label>Internet</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="easel-outline"></ion-icon></span>
+                    <label>Whiteboard</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="library-outline"></ion-icon></span>
+                    <label>Wardrobe</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="cafe-outline"></ion-icon></span>
+                    <label>Cofee & tea</label>
+                    
+                </div>
+                <div class="seeavail-btn">
+                    <a href="#"class="seebtn" >SEE AVAILABLITY</a>
+                </div>
+             </div>
+         </div>
+
+         <div class="col-sm-4 cardst">
+            <img src="./images/MeetingRoom (5).jpg">
+            <div class="card-text">
+                <h5 class="textcent">Maharastra</h5>
+                <p class="textcent">Meeting Room , Mumbai</p>
+            </div>
+            <div class="card-btn">
+                <a href="Booking.html" class="bookbtn">BookNow</a>
+              </div>
+
+              <div class="features2">
+
+                <div class="hovericon">
+                    <span><ion-icon name="tv-outline"></ion-icon></span>
+                    <label>Samsung</label>
+                    <label>Smart TV 50"</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="logo-apple"></ion-icon></span>
+                    <label>Mac Mini</label>
+                    <label>Computer</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="wifi-outline"></ion-icon></span>
+                    <label>Super fast</label>
+                    <label>Internet</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="easel-outline"></ion-icon></span>
+                    <label>Whiteboard</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="library-outline"></ion-icon></span>
+                    <label>Wardrobe</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="cafe-outline"></ion-icon></span>
+                    <label>Cofee & tea</label>
+                    
+                </div>
+                <div class="seeavail-btn">
+                    <a href="#"class="seebtn" >SEE AVAILABLITY</a>
+                </div>
+             </div>
+         </div>
+
+         <div class="col-sm-4 cardst">
+            <img src="./images/MeetingRoom (7).jpg">
+            <div class="card-text">
+                <h5 class="textcent">Pune</h5>
+                <p class="textcent">Meeting Room,TechCiTY</p>
+            </div>
+            <div class="card-btn">
+                <a href="Booking.html" class="bookbtn">BookNow</a>
+              </div>
+
+              <div class="features2">
+
+                <div class="hovericon">
+                    <span><ion-icon name="tv-outline"></ion-icon></span>
+                    <label>Samsung</label>
+                    <label>Smart TV 50"</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="logo-apple"></ion-icon></span>
+                    <label>Mac Mini</label>
+                    <label>Computer</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="wifi-outline"></ion-icon></span>
+                    <label>Super fast</label>
+                    <label>Internet</label>
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="easel-outline"></ion-icon></span>
+                    <label>Whiteboard</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="library-outline"></ion-icon></span>
+                    <label>Wardrobe</label>
+                    
+                </div>
+                <div class="hovericon">
+                    <span><ion-icon name="cafe-outline"></ion-icon></span>
+                    <label>Cofee & tea</label>
+                    
+                </div>
+                <div class="seeavail-btn">
+                    <a href="#"class="seebtn" >SEE AVAILABLITY</a>
+                </div>
+             </div>
+         </div>
+      </div>
+     
+</section>
+
+
+<section class="contact" id="contact">
+    
+    <div class="wrapper1">
+        <div class="title1">
+          <h3>Contact us form</h3>
+        </div>
+        <div class="contact-form" >
+            <form method = "post" action ="#">
+          <div class="input-fields">
+            
+            <input type="text" class="input" placeholder="Name" name="name">
+            <input type="email" class="input" placeholder="Email Address" name="email" pattern=".+@gmail\.com">
+            <input type="phone" class="input" placeholder="Phone" name="phone">
+            <input type="text" class="input" placeholder="Subject" name="subject">
+          </div>
+          <div class="msg">
+            <textarea placeholder="Message" name="message"></textarea>
+          
+            <div class="btn1"><button type="submit">send</div>
+            </form>
+          </div>
+        </div>
+        
+</section>
+
+<footer class="row foot" style="background-color: black; padding: 20px 0px 20px 60px;">
+    <div class="col-sm-3">
+        <h3>Brand.</h3>
+        <ul>
+            <li><a href="#">E-mail:mYroom@company.com</a></li>
+            <li><a href="#">91 7061205179</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-3">
+        <h3>Services</h3>
+        <ul>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">SEO Service</a></li>
+            <li><a href="#">Digital market</a></li>
+            <li><a href="#">Content create</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-3">
+        <h3>Customer Care</h3>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News & Articles</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-3">
+        <h3>Privacy</h3>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+        </ul>
+    </div>
+    </footer>
+    <div class="copyright row">
+        <span class="col-sm-6">Copyright @ 2023 mYroom | All Rights Reserved. </span> 
+       
+    
+        <div class="col-sm-6">
+           
+                
+              
+             <a href="#" style="color:grey;"><i class="fab fa-youtube"></i></a>
+             <a  id="insta" href="#" style="color:grey;"><i class="fab fa-instagram"></i></a>
+             <a href="#" style="color:grey;"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" style="color:grey;"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" style="color:grey;"><i class="fab fa-twitter"></i></a>
+    
+            
+        </div>
+            
+       
+        
+    </div>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script src="app.js"></script>
+ <script src="Login.js"></script>
+ <script src="Register.js"></script>
+ <script src="User.js"></script>
+ 
+</body>
+</html>

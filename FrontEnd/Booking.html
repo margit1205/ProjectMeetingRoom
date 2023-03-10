@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Booking.css" rel="stylesheet">
+     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" style="text/css">
+    <title>Booking</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+
+        
+     <div class="container-booking">
+        <h3>Book<span id="Yspan">Y</span>room</h3>
+        <div class="bookinput">
+
+
+        <div class="input-checkin">
+            <form id="checkavail">
+            <label>DATE</label>
+            <input id="dateinp" type="date" name="bookingdate" value="" required >
+            <label>CHECK-IN</label>
+            <input id="ininp" type="time" name="checkin" value="" required >
+            <label>CHECK-OUT</label>
+            <span></span><input  id="outinp" type="time" name="checkout" value="" required>
+            </form>
+        </div>
+
+        <form id="bookingnow">
+       <div class="booking_info">
+        <label>YOUR NAME</label>
+        <span class="loginicon1"><ion-icon name="person"></ion-icon></span>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <label>E-MAIL ADDRESS</label>
+        <span class="loginicon2"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <label>MOBILE NUMBER</label>
+        <span class="loginicon3"><ion-icon name="call"></ion-icon></span>
+        <input type="text" name="phone" placeholder="Enter your mobile number" required>
+        <label>Number of guest</label>
+        <span class="loginicon4"><ion-icon name="people"></ion-icon></span>
+        <input type="number" name="guest" placeholder="Enter no of guest"required>
+       </div>
+       <div class="room-option">
+        <label>BOKING FOR</label>
+        <input type="radio" name="option"><span>Interview</span>
+        <input type="radio" name="option"><span>Presentation</span>
+        <input type="radio" name="option"><span>Conference</span>
+       </div>
+    </form>
+    </div>
+
+    <div class=" bookimg ">
+       <img src="./images/MeetingRoom (25).jpg">
+    </div>
+    <div style="display: flex; flex-direction: row;">
+
+        <button  id="bookbtn" class="completeBtn" type="submit" name="CompleteBook" >Complete your booking</button>
+        <button style="background-color:orange" id="availbtn" class="completeBtn" type="submit" name="checkavail" >Check Availability</button>
+        
+    </div>
+     </div>
+
+     
+    </section>
+    <footer>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script src="Booking.js"></script>
+</body>
+</html>
