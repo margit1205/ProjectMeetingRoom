@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Bookinglist</title>
+	  <link rel="icon" href="./images/meeting-room-low-resolution-logo-color-on-transparent-background.png" type="image/icon type">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="./css/bookinglist.css">
+
+	</head>
+	<body>
+		<header style="height:70px;display:flex;">
+			
+				<!-- <div class="col-sm-3"> -->
+			  <a href="#" id="logo"class="logo">wave<span>M</span>room.com</a>
+			  <!-- </div> -->
+			  <!-- <div class="col-sm-6"> -->
+			  <nav class="navbar">
+				<a href="index.html">Home</a>
+				<a href="Booking.html">Book</a>
+				<a href="index.html#contactnow">Contact</a>
+				
+			  </nav>
+		</header>
+
+		<div class="searchbooking">
+
+			<form id="searchFrm">
+				<input id="searchName"type="text" value="" placeholder="Search by name">
+				<button  id="search-btn-fun" type="submit"><ion-icon name="search-outline"></ion-icon></button>
+			</form>
+			
+
+			<div id="searchdiv"  class="divforsearch">
+				<!-- <div class="icon-close3"> <ion-icon name="close"></ion-icon></div> -->
+			</div>
+			
+			
+			
+			
+			
+		</div>
+	<section class="ftco-section">
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-striped">
+						  <thead>
+						    <tr style="background: #0472d0;">
+						      <th>Emp. Id</th>
+						      <th>Room No</th>
+							  <th>Employee</th>
+							  <th>Date</th>
+						      <th>Time Slot</th>
+							  
+						      
+						    </tr>
+						  </thead>
+						  <tbody id="booking-table body">
+
+						    <!-- <tr>
+						      <th scope="row" name="employeeId">1001</th>
+						      <td name="roomName">501</td>
+						      <td name="empName">Shivam</td>
+						      <td name="bookingDate">2022-12-11</td>
+						      <td name="slotName">9 am - 10 am</td>
+						      <td><a href="Booking.html" class="btn btn-primary">BookMore</a></td>
+						    </tr> -->
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="animation">
+			
+			<img class="img2" src="./images/MeetingRoom (9).jpg">
+		</div> -->
+        <!-- <input type="button" value="Generate a table" onclick="generateTable()" /> -->
+	</section>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/bookinglist.js" ></script>
+
+	</body>
+</html>
+

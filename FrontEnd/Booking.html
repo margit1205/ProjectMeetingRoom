@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/Booking.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" style="text/css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <header style="display:flex;justify-content: center;">
+
+
+        <a href="#" id="logo" class="logo">wave<span>M</span>room.com</a>
+
+        <nav class="navbarnew">
+            <a href="index.html">Home</a>
+            <a href="bookinglist.html">Booking</a>
+            <a href="index.html#contactnow">Contact</a>
+        </nav>
+    </header>
+    <section>
+
+
+        <div class="container-booking">
+            <h3>Book<span id="Yspan">Y</span>room</h3>
+            <div class="bookinput">
+
+
+                <div class="input-checkin">
+                    <form id="checkavail">
+                        <label>DATE*</label>
+                        <input id="dateinp" type="date" name="bookingDate" required>
+                        <label style="margin-left: 30px;"> Room No</label>
+                        <select id="room-option" name="roomName" required></select>
+
+                    </form>
+                </div>
+                <form autocomplete="off" id="bookingnow">
+                    <div class="booking_info">
+                        <label>Time Slot</label>
+                        <select id="slot-option" name="slotName" required></select>
+                        <label style="margin-top: 30px;">Employee ID*</label>
+                        <!-- <span class="loginicon2"><ion-icon name="home"></ion-icon></span> -->
+                        <input id="empId" type="text" name="empId" placeholder="Enter Employee ID " required>
+                        <span class="loginicon1"><ion-icon name="person"></ion-icon></span>
+                        <div id="results"></div>
+                      
+                        <div class=" bookimg ">
+                            <img id="bookimage" src="./images/MeetingRoom (25).jpg">
+                        </div>
+                        <div class="capacity">
+                            <label style="margin-left: 55px;">Capacity</label>
+                            <div class="value">
+                                <span style="margin-left: 55px; margin-top: 5px; font-size: 1.2rem; font-weight: 500;"
+                                    id="capacity">10</span>
+                            </div>
+                        </div>
+                </form>
+            </div>
+
+
+            <div style="display: flex; flex-direction: row;">
+
+                <button id="bookbtn" class="completeBtn" type="submit" name="CompleteBook">Complete your
+                    booking</button>
+                <button style="background-color:orange" id="availbtn" class="completeBtn" type="submit"
+                    name="checkavail">Check Availability</button>
+            </div>
+
+            <!-- 
+      <div class="newemp" style="margin-left: 25px;"><span>New Employee&nbsp&nbsp</span><a href="index.html" class="login-link">Register</a></p></div> 
+     </div> -->
+
+            <!-- <img id="bookdek" src="./images/meetingroom1.png"> -->
+
+
+
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p >Slot is already booked..</p>
+                </div>
+              
+              </div>
+
+              <div id="myModal2" class="modal2">
+
+                <!-- Modal content -->
+                <div class="modal-content2">
+                  <span class="close2">&times;</span>
+                  <p id="modalp">Slot is avilable to book..</p>
+                </div>
+              
+              </div>
+
+
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/Booking.js"></script>
+</body>
+
+</html>

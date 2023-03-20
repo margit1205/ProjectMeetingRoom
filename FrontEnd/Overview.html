@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/Overview.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" style="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- <script src="https://cdnjs.com/libraries/Chart.js"></script> -->
+    <title>waveMroom.Overview</title>
+</head>
+
+<body>
+    <header style="display:flex;justify-content: center;">
+        <a href="#" id="logo" class="logo">wave<span>M</span>room.com</a>
+        <nav class="navbarnew">
+            <a href="main.html">Home</a>
+            <a href="bookinglist.html">Booking</a>
+            <a href="index.html#contactnow">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class=" mainsect">
+        <div class="jumbotron maindiv">
+            <h5 class="progresstitle">Weekly Booking Progress</h5>
+            <!-- <label>Monday</label>
+            <div class="progress mon">
+                <div class="progress-bar" role="progressbar"  style="width: 15%" aria-valuenow="10" aria-valuemin="0" 
+                aria-valuemax="100"></div>
+            </div>
+            <label>Tuesday</label>
+            <div class="progress tue">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <label>Wednesday</label>
+            <div class="progress wed">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <label>Thrusday</label>
+            <div class="progress thurs">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <label>Friday</label>
+            <div class="progress fri ">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div> -->
+        </div>
+
+        <div class="jumbotron maindiv">
+            <h5 class="progresstitle">Room Booking Progress</h5>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div id="rating"class="rating">
+
+            <div id="first" class="rating-cont">
+                <img src="./images/MeetingRoom (8).jpg" style="width:400px;">
+                <ul>
+                    <li >
+                        <h4 style="font-weight: bold; margin-top: 30px;">Room 501</h4>
+                        <li><span>Meeting Room ,Wavemaker</span></li>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                    </li>
+                   
+                </ul>
+            </div>
+
+
+            <div id="second" class="rating-cont">
+                <img src="./images/MeetingRoom (9).jpg" style="width:400px;">
+                <ul>
+                    <li >
+                        <h4 style="font-weight: bold; margin-top: 30px;">Room 502</h4>
+                        <li><span>Meeting Room ,Wavemaker</span></li>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                    </li>
+                   
+                </ul>
+            </div>
+
+
+
+
+            <div id="third" class="rating-cont">
+                <img src="./images/MeetingRoom (3).jpg" style="width:400px; height: 270px;">
+                <ul>
+                    <li>
+                        <h4 style="font-weight: bold; margin-top: 30px;">Room 503</h4>
+                        <li><span>Meeting Room ,Wavemaker</span></li>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                    </li>
+                   
+                </ul>
+            </div>
+
+
+
+
+
+            <div id="fourth" class="rating-cont">
+                <img src="./images/MeetingRoom (17).jpg" style="width:400px;">
+                <ul>
+                    <li >
+                        <h4 style="font-weight: bold; margin-top: 30px;">Room 504</h4>
+                        <li><span>Meeting Room ,Wavemaker</span></li>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                        <span class="glyphicon glyphicon-star-empty" style="color:orange;"></span>
+                    </li>
+                   
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="./js/Overview.js"></script>
+
+
+</body>
+
+</html>
